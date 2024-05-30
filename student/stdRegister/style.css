@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy";
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  background-image: url(https://images.unsplash.com/photo-1627556704243-5f0771d90783?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: center;
+}
+#overlay {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.244);
+}
+#box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+}
+.container {
+  max-width: 700px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+}
+.container .title {
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+.container .title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 2px;
+  width: 140px;
+  background: #dc2626;
+}
+
+#btn-back {
+  height: 50px;
+  width: 100px;
+  /* background-color: bisque; */
+  position: absolute;
+  right: 4%;
+  top: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#btn-back .button {
+  /* height: 30px; */
+  margin: 45px 0;
+  
+}
+#btn-back .button input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  background: #dc2626;
+  padding: 5px 15px;
+}
+.container form .user-details {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0 12px 0;
+}
+form .user-details .input-box {
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+.user-details .input-box .details {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.user-details .input-box input {
+  height: 45px;
+  width: 90%;
+  /* margin-right: 10px; */
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  padding-right: 10px;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+  border-color: #dc2626;
+}
+
+/* problem */
+form .problem-details .problem-title {
+  font-size: 20px;
+  font-weight: 500;
+}
+form .problem-details .category {
+  display: flex;
+  width: 80%;
+  margin: 14px 0;
+  justify-content: space-between;
+}
+.problem-details .category label {
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+}
+.problem-details .category .dot {
+  height: 18px;
+  width: 18px;
+  background: #d9d9d9;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two,
+#dot-3:checked ~ .category label .three {
+  border-color: #d9d9d9;
+  background: #dc2626;
+}
+
+form input[type="radio"] {
+  display: none;
+}
+
+/* textarea */
+textarea {
+    height: 100px;
+    width: 100%;
+    /* border: none; */
+    font-size: 18px;
+    background: #fff;
+    border-color: #dc2626;
+    border-radius: 6px;
+    padding: 10px 15px;
+    color: #000;
+    font-weight: 500;
+    /* resize: none; */
+}
+.message-box {
+    min-height: 100px;
+    border-color: #dc2626;
+}
+textarea::-webkit-scrollbar {
+    width: 0;
+}
+
+/* button  */
+form .button {
+  height: 45px;
+  margin: 45px 0;
+}
+form .button input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  letter-spacing: 5px;
+  background: #dc2626;
+}
+
+/* responsive */
+@media (max-width: 584px) {
+    * {
+      font-size: 14px;
+      font-family: "Gilroy";
+    }
+    .box {
+        max-width: 100%;
+        height: 80%;
+        padding: 50px 0;
+    }
+    .container {
+      margin-top: 100px;
+        max-width: 100%;
+        padding: 20px;
+        
+    }
+    form .user-details .input-box {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    form .problem-details .category {
+        width: 100%;
+    }
+    .container form .user-details {
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+    .user-details::-webkit-scrollbar {
+        width: 0;
+    }
+}

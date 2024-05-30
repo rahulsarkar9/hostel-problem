@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy";
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000;
+}
+#main {
+  height: 100%;
+  width: 100%;
+  background-image: url(https://images.unsplash.com/photo-1627556704243-5f0771d90783?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: center;
+}
+#overlay {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.467);
+}
+
+.login-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  height: 330px;
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 30px;
+  text-transform: uppercase;
+  /* font-family: "Gilroy"; */
+  /* font-weight: 600; */
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.login-container input[type="submit"] {
+  width: 100%;
+  background-color: #dc2626;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  padding: 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* .login-container input[type="submit"]:hover {
+    background-color: #000;
+} */
+
+.login-container .forgot-password {
+  text-align: right;
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #dc2626;
+}
+.login-container .forgot-password a{
+
+  color: #dc2626;
+}
+
+.login-container .new-user {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.login-container .new-user a {
+  color: #dc2626;
+  text-decoration: none;
+}
+
+.login-container .new-user a:hover {
+  text-decoration: underline;
+}

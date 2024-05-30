@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "Voyage"; */
+  color: #fff;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#main {
+  height: 100%;
+  width: 100%;
+  background-image: url(https://images.unsplash.com/photo-1527745607521-b8270d950e6c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: center;
+}
+#overlay {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.467);
+}
+#box {
+  position: relative;
+  height: 80%;
+  width: 70%;
+  background-color: #ffffffd8;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  padding: 20px;
+  overflow: hidden;
+  background-color: #967bb6;
+}
+/* #top #box > h1 {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "gilroy";
+  text-transform: uppercase;
+  color: #000;
+  font-size: 30px;
+} */
+
+#top {
+  position: relative;
+  left: -5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 8vh;
+  width: 110%;
+  /* background-color: #da2626; */
+  overflow: hidden;
+}
+
+#top h1 {
+  color: #fff;
+  letter-spacing: 3px;
+  font-family: "voyage";
+}
+#btm {
+  margin-top: 10px;
+  height: 50vh;
+  width: 100%;
+  /* background-color: greenyellow; */
+}
+
+/* complaints  */
+
+.container {
+  width: 100%;
+  height: 60vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  scrollbar-width: none;
+}
+
+.scroll-box {
+  height: 100px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.scroll-box h2 {
+  font-size: 1.5vw;
+  color: #000;
+}
+
+.scroll-box p {
+  font-size: 1.1vw;
+  color: #000;
+}
+.scroll-box p strong {
+  color: #000;
+}
+
+/* back button  */
+#btn-back {
+  height: 50px;
+  width: 100px;
+  /* background-color: bisque; */
+  position: absolute;
+  top: 95%;
+  left: 8%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#btn-back .button input {
+  top: 5%;
+  left: 2%;
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: #fff;
+  border: none;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  background: #da2626;
+  padding: 5px 15px;
+}
